@@ -1,8 +1,6 @@
 import axios from "axios";
 import apiKey from "./api-key";
 
-console.log(apiKey);
-
 const apiKey2 = apiKey;
 
 const weatherApi = axios.create({
