@@ -11,18 +11,22 @@ function WeatherFormat({ currWeather, celcius, forecast }) {
   return (
     <>
       <h3>{currWeather.condition.text}</h3>
-      <div id="current_weather">
-        <img src={currWeather.condition.icon} />
-        <p>
-          {celcius === true ? currWeather.temp_c : currWeather.temp_f}{" "}
-          {celcius === true ? "°C" : "°F"}
-        </p>
-        <p>{currWeather.humidity}%</p>
-        <p>{currWeather.wind_kph} kp/h</p>
-      </div>
-      <div id="astro">
-        <p>{sunrise}</p>
-        <p>{sunset}</p>
+      <div id="current_weather_container">
+        <div id="astro">
+          <p>sunrise: {sunrise}</p>
+          <p>sunset: {sunset}</p>
+        </div>
+        <div id="current_weather">
+          <img id="weather_icon" src={currWeather.condition.icon} />
+          <p>
+            {celcius === true ? currWeather.temp_c : currWeather.temp_f}{" "}
+            {celcius === true ? "°C" : "°F"}
+          </p>
+        </div>
+        <div id="current_wind_humidity">
+          <p>humidity: {currWeather.humidity}%</p>
+          <p>wind: {currWeather.wind_kph} kp/h</p>
+        </div>
       </div>
 
       <div id="forecast_days">

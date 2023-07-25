@@ -1,0 +1,46 @@
+* {
+  font-family: sans-serif;
+  padding: 0;
+  max-width: 700px;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.body_container {
+  margin-top: 20px;
+  display: grid;
+  justify-content: center;
+  background-color: lightblue;
+}
+
+.body_container header {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.weather_spot_logo_link:link {
+  text-decoration: none;
+}
+
+.body_container header h1 {
+  color: #333333;
+}
+
+.body_container header h1:visited {
+  color: #333333;
+}
+
+.body_container header h1:hover {
+  transition: ease-in 0.2s;
+  color: teal;
+}
+
+.body_container header h1:active {
+  color: teal;
+}
+
+.body_container main {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}

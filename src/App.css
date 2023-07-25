@@ -1,0 +1,45 @@
+* {
+  font-family: sans-serif;
+  padding: 0;
+  max-width: 700px;
+  margin: auto;
+  border-radius: 20px;
+  color: #333333;
+}
+
+#dropdown_container {
+  margin-top: 20px;
+  display: grid;
+  justify-content: center;
+  background-color: lightblue;
+}
+
+#dropdown_container header {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+#dropdown_container main {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+#dropdown_container input {
+  width: 230px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+#search_icon {
+  height: 20px;
+}
+
+#dropdown_container button {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+}

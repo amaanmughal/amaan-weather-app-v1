@@ -5,11 +5,11 @@ function Forecast({ forecast, selectedDay, celcius }) {
     if (dayObj.date === selectedDay) {
       return (
         <>
-          <p>{selectedDay}</p>
-          <ul>
+          <p id="selected_day">{selectedDay}</p>
+          <ul id="hours_carousel">
             {dayObj.hour.map((hours, i) => {
               return (
-                <li key={hours.time}>
+                <li className="hourly_weather" key={hours.time}>
                   <p>{hours.time.split(" ")[1]}</p>
                   <img src={hours.condition.icon} />
                   <p>

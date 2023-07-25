@@ -1,6 +1,9 @@
 import axios from "axios";
+import apiKey from "./api-key";
 
-const apiKey = "2cd069af0eb0462b80e173450230407";
+console.log(apiKey);
+
+const apiKey2 = apiKey;
 
 const weatherApi = axios.create({
   baseURL: "http://api.weatherapi.com/v1",
@@ -8,7 +11,7 @@ const weatherApi = axios.create({
 
 export const fetchWeather = (area) => {
   return weatherApi
-    .get(`/forecast.json?key=${apiKey}&q=${area}&days=3`)
+    .get(`/forecast.json?key=${apiKey2}&q=${area}&days=3`)
     .then((res) => {
       return res.data;
     })
